@@ -22,6 +22,12 @@ class Car extends VehicleModule {
         this.fuel = 10;
         this.scheduleService = false;
     }
+    loadPassenger() { }
+    start() { }
+    scheduleService(mileage) { if (this.mileage > 30000) {
+        this.scheduleService === true
+        return this.scheduleService;
+    } }
 }
 
 
