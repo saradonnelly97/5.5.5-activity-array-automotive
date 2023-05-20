@@ -22,13 +22,21 @@ class Car extends VehicleModule {
         this.fuel = 10;
         this.scheduleService = false;
     }
-    loadPassenger() { }
+ }
     start() { }
     scheduleService(mileage) { if (this.mileage > 30000) {
         this.scheduleService === true
         return this.scheduleService;
     } }
-}
+    loadPassenger() { if (this.passenger < this.maxPassengers) {
+        if((num + this.passenger) <= this.maxPassengers) {
+            this.passenger = num; 
+            return this.passenger 
+        } else { 
+            console.log(this.model + " " + this.make + " not have enough space to transport all passengers.";)
+        }
+        }
+    }
 
 
 
