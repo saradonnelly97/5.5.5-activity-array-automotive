@@ -32,11 +32,14 @@ class Car extends VehicleModule {
             return this.started = false;
         }
      }
-     
-    scheduleService(mileage) { if (this.mileage > 30000) {
-        this.scheduleService === true
-        return this.scheduleService;
-    } }
+
+    scheduleService() {
+        if (this.mileage > 30000) {
+            this.scheduleService = true
+            return this.scheduleService;
+        }
+    }
+    
     loadPassenger() { if (this.passenger < this.maxPassengers) {
         if((num + this.passenger) <= this.maxPassengers) {
             this.passenger = num; 
