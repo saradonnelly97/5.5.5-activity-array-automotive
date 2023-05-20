@@ -12,7 +12,14 @@ console.log(v.make)
 
 
 //TO DO: Code the Car subclass here or in index.js file, i.e. class Car extends Vehicle ...
-class Car extends VehicleModule
+class Car extends VehicleModule {
+    constructor (make, model, color) {
+        this.make = make
+        this.model = model
+        this.color = color
+        
+    }
+}
 
 
 
